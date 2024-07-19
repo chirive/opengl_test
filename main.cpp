@@ -2,6 +2,8 @@
 #include <windows.h>      
 #include <gl/glut.h>      
 #include <math.h>     
+#include <stdio.h>
+
 #define GL_PI 3.1415f         
 
 float fMoonRot = 0.0f;
@@ -31,6 +33,7 @@ void sun()
 }
 void Adam()
 {
+    printf("hello, adam");
     //绘制水星  
     glPushMatrix();
     glColor3ub(0, 0, 255);
@@ -42,6 +45,8 @@ void Adam()
         fAdamRot = 0.0f;
     glPopMatrix();
 }
+
+
 void Hesper()
 {
     //绘制金星  
